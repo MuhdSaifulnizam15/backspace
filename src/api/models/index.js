@@ -5,4 +5,5 @@ module.exports = {
     User: require('./user.model'),
     State: require('./state.model'),
     Category: require('./category.model'),
+    Product: require('./product.model'),
 };

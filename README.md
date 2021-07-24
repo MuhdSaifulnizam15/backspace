@@ -134,3 +134,10 @@ List of available routes:
 `GET /v1/category/:categoryId` - get category\
 `PATCH /v1/category/:categoryId` - update category\
 `DELETE /v1/category/:categoryId` - delete category
+
+**Product routes**:\
+`POST /v1/product` - create a product\
+`GET /v1/product` - get all categories\
+`GET /v1/product/:productId` - get product\
+`PATCH /v1/product/:productId` - update product\
+`DELETE /v1/product/:productId` - delete product

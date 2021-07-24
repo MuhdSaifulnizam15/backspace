@@ -4,4 +4,5 @@ module.exports = {
     stateController: require('./state.controller'),
     cityController: require('./city.controller'),
     categoryController: require('./category.controller'),
+    productController: require('./product.controller'),
 };

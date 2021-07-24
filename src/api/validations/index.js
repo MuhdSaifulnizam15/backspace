@@ -4,4 +4,5 @@ module.exports = {
     stateValidation: require('./state.validation'),
     cityValidation: require('./city.validation'),
     categoryValidation: require('./category.validation'),
+    productValidation: require('./product.validation'),
 };

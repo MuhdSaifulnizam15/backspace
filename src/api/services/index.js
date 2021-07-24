@@ -6,4 +6,5 @@ module.exports = {
     stateService: require('./state.service'),
     cityService: require('./city.service'),
     categoryService: require('./category.service'),
+    productService: require('./product.service'),
 };
