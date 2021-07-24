@@ -1,4 +1,5 @@
 const httpStatus = require('http-status');
+const pick = require('../utils/pick');
 const ApiError = require('../utils/ApiError');
 const catchAsync = require('../utils/catchAsync');
 const { cityService } = require('../services');
@@ -9,7 +10,8 @@ const createCity = catchAsync(async (req, res) => {
 });
 
 const getCitys = catchAsync(async (req, res) => {
-    const result = await cityService.getAllCity();
+    const options = pick(req.query, ['sort', 'limit', 'page']);
+    const result = await cityService.getAllCity(options);
     res.send({ status: true, code: '0000', result });
 });
 

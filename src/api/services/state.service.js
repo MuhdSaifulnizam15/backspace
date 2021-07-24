@@ -14,7 +14,6 @@ const createState = async (userBody) => {
 };
 
 const getAllState = async (options) => {
-    console.log(options);
     const states = await State.paginate({}, options);
     return states;
 };

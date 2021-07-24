@@ -10,7 +10,7 @@ const createState = catchAsync(async (req, res) => {
 });
 
 const getStates = catchAsync(async (req, res) => {
-    const options = pick(req.query, ['sortBy', 'limit', 'page']);
+    const options = pick(req.query, ['sort', 'limit', 'page']);
     const result = await stateService.getAllState(options);
     res.send({ status: true, code: '0000', result });
 });
