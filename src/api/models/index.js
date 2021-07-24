@@ -4,4 +4,5 @@ module.exports = {
     Token: require('./token.model'),
     User: require('./user.model'),
     State: require('./state.model'),
+    Category: require('./category.model'),
 };

@@ -3,6 +3,7 @@ const authRoutes = require('./auth.route');
 const userRoutes = require('./user.route');
 const stateRoutes = require('./state.route');
 const cityRoutes = require('./city.route');
+const categoryRoutes = require('./category.route');
 
 const router = express.Router();
 
@@ -28,6 +29,10 @@ const defaultRoutes = [
     {
       path: '/city',
       route: cityRoutes,
+    },
+    {
+      path: '/category',
+      route: categoryRoutes,
     },
 ];
 
